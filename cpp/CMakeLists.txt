@@ -2,7 +2,7 @@
 CMAKE_MINIMUM_REQUIRED( VERSION 3.14 )
 
 # declare the project name
-PROJECT(GBL)
+PROJECT(GBL LANGUAGES CXX)
 
 ## ========= Versioning ==========
 set( ${PROJECT_NAME}_VERSION_MAJOR 4 )
