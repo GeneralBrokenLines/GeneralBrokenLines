@@ -1,0 +1,16 @@
+ label 1: numData 0, expected 0
+ label 2: numData 2, expected 2
+ label 3: numData 0, expected 0
+ label 4: numData 0, expected 0
+ label 5: numData 0, expected 0
+ label 6: numData 0, expected 0
+ label 7: numData 1, expected 1
+ label 8: numData 0, expected 0
+ label 9: numData 0, expected 0
+ label 10: numData 0, expected 0
+ label 11: numData 0, expected 0
+ label 12: numData 2, expected 2
+ label 13: numData 0, expected 0
+ label 14: numData 0, expected 0
+ label 15: numData 0, expected 0
+ OK

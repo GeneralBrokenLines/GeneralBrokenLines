@@ -5,7 +5,8 @@ listOfTests = ["GBL_example1",
                        "GBL_exampleComposedGeo", 
                        "GBL_exampleComposedKin", 
                        "GBL_exampleDc", 
-                       "GBL_exampleSit"
+                       "GBL_exampleSit",
+                       "GBL_exampleComposedTrajectory"
                        ]
 
 def logFileName(testName: str, isRef: bool = False)-> str:

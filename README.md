@@ -9,10 +9,10 @@ Detailed documentation can be found at https://millepede.pages.desy.de/general-b
 
 ## Obtaining the code 
 
-We recommend using the latest tagged release - currently version **04-00-06**. 
+We recommend using the latest tagged release - currently version **04-00-07**. 
 This can be done via 
 ```
-wget https://gitlab.desy.de/millepede/general-broken-lines/-/archive/V04-00-06/general-broken-lines-V04-00-06.tar.gz
+wget https://gitlab.desy.de/millepede/general-broken-lines/-/archive/V04-00-07/general-broken-lines-V04-00-07.tar.gz
 ```
 
 Alternatively, you can clone the sources from the package's [gitlab](https://gitlab.desy.de/millepede/general-broken-lines) repository or the [GitHub mirror](https://github.com/GeneralBrokenLines/GeneralBrokenLines). 

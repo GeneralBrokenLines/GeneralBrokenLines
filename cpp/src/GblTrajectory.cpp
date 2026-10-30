@@ -1467,6 +1467,8 @@ void GblTrajectory::prepare() {
 		scatDataIndex[1] = nData;
 		// loop over trajectories
 		for (unsigned int iTraj = 0; iTraj < numTrajectories; ++iTraj) {
+			// first point of component has no kinks (empty range)
+			scatDataIndex[thePoints[iTraj].front().getLabel()] = nData;
 			for (itPoint = thePoints[iTraj].begin() + 1;
 					itPoint < thePoints[iTraj].end(); ++itPoint) {
 				Vector4d aMeas, aPrec;
