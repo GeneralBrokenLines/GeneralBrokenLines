@@ -14,3 +14,4 @@ ADD_PATHFINDER_EXAMPLE( exampleComposedGeo exampleComposedGeo.cpp exampleUtilCdc
 ADD_PATHFINDER_EXAMPLE( exampleComposedKin exampleComposedKin.cpp exampleUtilCdc.cpp )
 ADD_PATHFINDER_EXAMPLE( exampleDc exampleDc.cpp )
 ADD_PATHFINDER_EXAMPLE( exampleSit exampleSit.cpp )
+ADD_PATHFINDER_EXAMPLE( exampleComposedTrajectory exampleComposedTrajectory.cpp )
