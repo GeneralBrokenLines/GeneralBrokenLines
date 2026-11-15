@@ -18,11 +18,17 @@ option( SUPPORT_ROOT "Support ROOT for user I/O" False )
 option(JNA_DEBUG "Debug printouts for helping debug JNA memory issues" OFF)
 option(JNA_MEMORY_MONITOR 
   "Only keep track of structures allocated and destructed within JNA wrappers" OFF)
+option(DEBUG "Debug" OFF)
 
 
 ## ========= Compiler flags and install prefix ==========
-set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wshadow -pedantic -Wno-long-long -Wuninitialized -Wno-unused-function -O3" )
 
+if (DEBUG)
+set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wshadow -pedantic -Wno-long-long -Wuninitialized -Wno-unused-function -O3 -g -fsanitize=address -fno-omit-frame-pointer" )
+set (CMAKE_LD_FLAGS "-fsanitize=address")
+else()
+set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wshadow -pedantic -Wno-long-long -Wuninitialized -Wno-unused-function -O3" )
+endif()
 # install prefix - default to a local install 
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
     set_property(CACHE CMAKE_INSTALL_PREFIX  PROPERTY VALUE "${PROJECT_BINARY_DIR}/GBLInstall" )
