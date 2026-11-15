@@ -21,8 +21,11 @@ option(JNA_MEMORY_MONITOR
 
 
 ## ========= Compiler flags and install prefix ==========
-set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wshadow -pedantic -Wno-long-long -Wuninitialized -Wno-unused-function -O3" )
 
+if(NOT DEFINED CMAKE_CXX_FLAGS OR CMAKE_CXX_FLAGS STREQUAL "")
+    set(CMAKE_CXX_FLAGS
+        "-Wall -Wextra -Wshadow -pedantic -Wno-long-long -Wuninitialized -Wno-unused-function -O3")
+endif()
 # install prefix - default to a local install 
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
     set_property(CACHE CMAKE_INSTALL_PREFIX  PROPERTY VALUE "${PROJECT_BINARY_DIR}/GBLInstall" )

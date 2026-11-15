@@ -1516,8 +1516,8 @@ void GblTrajectory::prepare() {
 						unsigned int numRelated = 0;
 						while (ilabel < numDer) {
 							if (labDer[ilabel] > 0) {
-								while (innerTransLab[iTraj][ifirst]
-										!= labDer[ilabel] and ifirst <= ilast) {
+								while (ifirst <= ilast && innerTransLab[iTraj][ifirst]
+										!= labDer[ilabel]) {
 									++ifirst;
 								}
 								if (ifirst > ilast) {
